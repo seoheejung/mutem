@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	https://www.springframework.org/schema/beans/spring-beans.xsd 
+        http://www.springframework.org/schema/mvc 
+        https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+		<!-- 정적인 파일을 static 폴더에서 	출력 가능) -->
+	<mvc:resources location="/static/" mapping="/**" />
+	
+	
+	<!-- 해당 뷰로 넘어가기 위해 매핑하기 -->
+	<bean name="/index" class="com.mutem.Controller.templateController" />
+	<bean name="/list" class="com.mutem.Controller.templateController" />
+	<bean name="/allList" class="com.mutem.Controller.templateController" />
+	
+	<bean name="/admin" class="com.mutem.Controller.adminController" />
+	<bean name="/adminLogin" class="com.mutem.Controller.adminController" />
+	<bean name="/login" class="com.mutem.Controller.adminController" />
+	<bean name="/adminLogout" class="com.mutem.Controller.adminController" />
+	
+	<bean name="/add" class="com.mutem.Controller.adminController" />
+	<bean name="/addTemplate" class="com.mutem.Controller.adminController" />
+	<bean name="/modify" class="com.mutem.Controller.adminController" />
+	<bean name="/modifyTemplate" class="com.mutem.Controller.adminController" />
+</beans>
