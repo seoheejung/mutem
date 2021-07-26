@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<div class="p-3 " style="background-color: #9494F7;">
+<div class="p-3" style="background-color: #9494F7;">
 	<div class="container">
 		<h3 class="text-primary">
-			<a class="navbar-brand" href="/mutem/list">mutem</a>
+			<a class="navbar-brand" href="/mutem/allList">mutem</a>
 		</h3>
 
 		<p>Copyright 2021. mutem All pictures cannot be copied without

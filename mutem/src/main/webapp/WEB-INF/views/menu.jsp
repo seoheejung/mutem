@@ -9,7 +9,8 @@
 	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
 html {
-	font-size: 95%
+	font-size: 95%;
+	height:100%;
 }
 @media ( min-width : 768px) {
 	.container {
